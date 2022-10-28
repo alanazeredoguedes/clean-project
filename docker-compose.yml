@@ -9,7 +9,7 @@ services:
     container_name: phpdocker81
     restart: unless-stopped
     ports:
-      - 8000:80
+      - 9001:80
     volumes:
       - ./:/var/www/
       - ./docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf

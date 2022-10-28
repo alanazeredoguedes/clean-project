@@ -3,4 +3,4 @@
 input=$*
 
 clear
-docker compose exec app $input
+sudo docker compose exec php8.1 $input
