@@ -1,7 +1,7 @@
 version: "3.7"
 
 services:
-  php8.1:
+  app:
     build:
       context: ./docker/php/
       dockerfile: Dockerfile
@@ -9,7 +9,7 @@ services:
     container_name: phpdocker81
     restart: unless-stopped
     ports:
-      - 9001:80
+      - '80:80'
     volumes:
       - ./:/var/www/
       - ./docker/apache/000-default.conf:/etc/apache2/sites-available/000-default.conf
