@@ -1,4 +1,4 @@
 #! /bin/bash
 
 # Instala as dependências do projeto
-./run composer install
+./run.sh composer install

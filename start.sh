@@ -1,12 +1,10 @@
-#! /bin/bash
+#!/bin/bash
 
 docker compose down
 
-# Roda projeto atachado no terminal
-#docker compose up --build
+docker compose up -d
 
-# Roda projeto em background
-docker compose up -d --build
+./run.sh composer install
 
-docker/init.sh
+#docker/init.sh
 #(cd docker/ && ./init.sh)
